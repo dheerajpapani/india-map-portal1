@@ -13,7 +13,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ErrorBoundary>
-      <BrowserRouter basename="/india-map-portal">
+      <BrowserRouter basename="/india-map-portal/frontend">
         <App />
       </BrowserRouter>
     </ErrorBoundary>
@@ -23,6 +23,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 // Register service worker (for PWA)
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/india-map-portal/frontend/sw.js');
+    navigator.serviceWorker.register('sw.js'); // ✅ fixed relative path
   });
 }

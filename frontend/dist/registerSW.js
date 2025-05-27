@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/india-map-portal/sw.js', { scope: '/india-map-portal/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/india-map-portal/frontend/sw.js', { scope: '/india-map-portal/frontend/' })})}
