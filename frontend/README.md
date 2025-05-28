@@ -1,3 +1,6 @@
+![Deploy Frontend](https://github.com/dheerajpapani/india-map-portal/actions/workflows/deploy-frontend.yml/badge.svg)
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
