@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";  // Remove BrowserRouter import
+import { Routes, Route } from "react-router-dom";  // Removed BrowserRouter import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import "./App.css";
@@ -79,23 +79,21 @@ const App = () => {
   }, [isShortPage]);
 
   return (
-    <BrowserRouter basename="/india-map-portal">
-      <div className="app-wrapper">
-        <NavigationBar />
-        <ScrollToTop />
-        <div className="container content-wrapper">
-          <Suspense fallback={<div style={{ textAlign: "center", padding: "2rem" }}>Loading...</div>}>
-            <Routes>
-              <Route path="/" element={<div className="page"><Home /></div>} />
-              <Route path="/about" element={<div className="page"><About /></div>} />
-              <Route path="/contact" element={<div className="page"><Contact /></div>} />
-              <Route path="/Mapview" element={<div className="page"><MapView /></div>} />
-            </Routes>
-          </Suspense>
-        </div>
-        <Footer fixed={footerFixed} />
+    <div className="app-wrapper">
+      <NavigationBar />
+      <ScrollToTop />
+      <div className="container content-wrapper">
+        <Suspense fallback={<div style={{ textAlign: "center", padding: "2rem" }}>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<div className="page"><Home /></div>} />
+            <Route path="/about" element={<div className="page"><About /></div>} />
+            <Route path="/contact" element={<div className="page"><Contact /></div>} />
+            <Route path="/Mapview" element={<div className="page"><MapView /></div>} />
+          </Routes>
+        </Suspense>
       </div>
-    </BrowserRouter>
+      <Footer fixed={footerFixed} />
+    </div>
   );
 };
 
