@@ -6,7 +6,7 @@
   "homepage": "https://dheerajpapani.github.io/india-map-portal",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copy dist\\index.html dist\\404.html",
+    "build": "vite build && cpy dist\\index.html dist\\404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -29,6 +29,7 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "cpy-cli": "^5.0.0",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -37,5 +38,4 @@
     "vite": "^6.3.5",
     "vite-plugin-pwa": "^1.0.0"
   }
-
 }
