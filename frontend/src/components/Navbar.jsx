@@ -10,7 +10,7 @@ const NavigationBar = () => {
   return (
     <Navbar bg="light" expand="lg" className="fixed-top shadow-sm">
       <Container fluid className="px-3 px-lg-5">
-        <Navbar.Brand as={Link} to="/india-map-portal/" className="d-flex align-items-center">
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img
             src={logo}
             alt="Logo"
