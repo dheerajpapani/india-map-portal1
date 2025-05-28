@@ -1,3 +1,4 @@
+// src/components/Navbar.jsx
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
@@ -25,16 +26,32 @@ const NavigationBar = () => {
           className="bg-light p-3 p-lg-0 rounded-bottom"
         >
           <Nav className="ms-auto text-center">
-            <Nav.Link as={Link} to="/india-map-portal/" active={location.pathname === "/india-map-portal/"}>
+            <Nav.Link
+              as={Link}
+              to="/india-map-portal/"
+              active={location.pathname === "/india-map-portal/"}
+            >
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/india-map-portal/about" active={location.pathname === "/india-map-portal/about"}>
+            <Nav.Link
+              as={Link}
+              to="/india-map-portal/about"
+              active={location.pathname === "/india-map-portal/about"}
+            >
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/india-map-portal/contact" active={location.pathname === "/india-map-portal/contact"}>
+            <Nav.Link
+              as={Link}
+              to="/india-map-portal/contact"
+              active={location.pathname === "/india-map-portal/contact"}
+            >
               Contact
             </Nav.Link>
-            <Nav.Link as={Link} to="/india-map-portal/Mapview" active={location.pathname === "/india-map-portal/Mapview"}>
+            <Nav.Link
+              as={Link}
+              to="/india-map-portal/Mapview"
+              active={location.pathname === "/india-map-portal/Mapview"}
+            >
               Explore Map
             </Nav.Link>
           </Nav>
