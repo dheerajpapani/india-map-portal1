@@ -88,7 +88,7 @@ const App = () => {
             <Route path="/" element={<div className="page"><Home /></div>} />
             <Route path="/about" element={<div className="page"><About /></div>} />
             <Route path="/contact" element={<div className="page"><Contact /></div>} />
-            <Route path="/map" element={<div className="page"><MapView /></div>} />
+            <Route path="/Mapview" element={<div className="page"><MapView /></div>} />
           </Routes>
         </Suspense>
       </div>
