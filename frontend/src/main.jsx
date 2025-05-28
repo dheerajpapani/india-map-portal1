@@ -13,9 +13,11 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ErrorBoundary>
-      <BrowserRouter basename="/india-map-portal/frontend">
+      <HashRouter>
+        <BrowserRouter basename="/india-map-portal/frontend">
         <App />
-      </BrowserRouter>
+        </BrowserRouter>
+      </HashRouter>
     </ErrorBoundary>
   </React.StrictMode>
 );
