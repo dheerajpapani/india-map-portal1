@@ -28,29 +28,29 @@ const NavigationBar = () => {
           <Nav className="ms-auto text-center">
             <Nav.Link
               as={Link}
-              to="/india-map-portal/"
-              active={location.pathname === "/india-map-portal/"}
+              to="/"
+              active={location.pathname === "/"}
             >
               Home
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/india-map-portal/about"
-              active={location.pathname === "/india-map-portal/about"}
+              to="/about"
+              active={location.pathname === "/about"}
             >
               About
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/india-map-portal/contact"
-              active={location.pathname === "/india-map-portal/contact"}
+              to="/contact"
+              active={location.pathname === "/contact"}
             >
               Contact
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/india-map-portal/Mapview"
-              active={location.pathname === "/india-map-portal/Mapview"}
+              to="/Mapview"
+              active={location.pathname === "/Mapview"}
             >
               Explore Map
             </Nav.Link>
